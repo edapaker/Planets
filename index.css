@@ -42,7 +42,7 @@ html {
     left: 0
 }
 
-#nav img {
+#nav div {
     width: 40%;
     cursor: pointer;
     user-select: none;
@@ -50,13 +50,39 @@ html {
     transition: all 0.25s ease;
 }
 
-#nav img:hover {
+#nav div img {
+    width: 100%;
+}
+
+#nav div:hover {
     width: 55%;
 }
 
-#nav img:active {
+#nav div:hover div {
+    opacity: 1;
+    left: 110%;
+}
+
+#nav div:active {
     transition: all 0.05s ease;
     width: 50%;
+}
+
+#nav div div {
+    font-family: 'Montserrat', sans-serif;
+    width: auto;
+    color: white;
+    font-size: 1.5em;
+    opacity: 0;
+    position: absolute;
+    transition: 0.15s ease;
+    filter: none !important;
+    left: 100%;
+    top: calc(50% - 1.25em);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    pointer-events: none;
 }
 
 
